@@ -1,0 +1,5 @@
+E:\Git Sources\Projects\WpfPracs\BeloteTests\bin\Debug\BeloteTests.dll
+E:\Git Sources\Projects\WpfPracs\BeloteTests\bin\Debug\BeloteTests.pdb
+E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\ResolveAssemblyReference.cache
+E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\BeloteTests.dll
+E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\BeloteTests.pdb

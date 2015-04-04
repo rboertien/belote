@@ -1,0 +1,51 @@
+﻿<Window x:Class="Belote.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:model="clr-namespace:Belote.Models"
+        Title="Belote (klaverjassen)" Height="600" Width="800" MinHeight="500" MinWidth="700">
+    <Window.Resources>
+        <DataTemplate x:Key="playerTemplate" DataType="Card">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Test"/>
+                <Label Content="Value"/> <!--{Binding CardColor}-->
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Background="Brown" Height="40">
+            <TextBlock Text="Header"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom" Background="Brown" Height="40">
+            <TextBlock Text="Bottom"/>
+        </StackPanel>
+        <StackPanel Background="Green" Width="200">
+            <TextBlock Text="Reclame"/>
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right" Background="Brown" Width="100">
+            <TextBlock Text="Score"/>
+        </StackPanel>
+        <Grid Background="GreenYellow">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListView DataContext="{Binding Hand}" Grid.Row="0" Grid.Column="1" 
+               ItemsSource="{Binding Cards}" 
+               ItemTemplate="{DynamicResource playerTemplate}">
+                <ListBoxItem/>
+            </ListView>
+
+            <TextBlock Grid.Row="1" Grid.Column="2"  Text="Computer 2 (Oost)"/>
+            <TextBlock Grid.Row="2" Grid.Column="1" Text="Player (Zuid)"/>
+            <TextBlock Grid.Row="1" Text="Computer 3 (West)"/>
+            <TextBlock Grid.Row="1" Grid.Column="1"  Text="Table (Midden)"/>
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,14 @@
+E:\Git Sources\Projects\WpfPracs\Belote\bin\Debug\Belote.exe
+E:\Git Sources\Projects\WpfPracs\Belote\bin\Debug\Belote.pdb
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Views\MainWindow.baml
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Views\MainWindow.g.cs
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\App.g.cs
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote_MarkupCompile.cache
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.g.resources
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.Properties.Resources.resources
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.exe
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.pdb
+E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote_MarkupCompile.lref
