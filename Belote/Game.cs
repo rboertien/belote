@@ -20,9 +20,15 @@ namespace Belote
             InitializePlayers();
         }
 
+
+        internal void Reset()
+        {
+            // TODO  reset the game, same as start ?
+        }
+
         internal void Stop()
         {
-            // TODO
+            // TODO Stop the game
         }
 
         internal void Pause()

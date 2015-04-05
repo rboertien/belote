@@ -12,3 +12,5 @@ E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\GenerateResource.write.1.t
 E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.exe
 E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.pdb
 E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote_MarkupCompile.lref
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.exe
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.pdb
