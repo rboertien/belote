@@ -14,3 +14,15 @@ E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote.pdb
 E:\Git Sources\Projects\WpfPracs\Belote\obj\x86\Debug\Belote_MarkupCompile.lref
 D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.exe
 D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.pdb
+D:\Git Sources\Projects VS2010\belote\Belote\bin\Debug\Belote.exe
+D:\Git Sources\Projects VS2010\belote\Belote\bin\Debug\Belote.pdb
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.csprojResolveAssemblyReference.cache
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\App.g.cs
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote_MarkupCompile.cache
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote_MarkupCompile.lref
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.g.resources
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.Properties.Resources.resources
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Belote.csproj.GenerateResource.Cache
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Views\Windows\MainWindow.g.cs
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Git Sources\Projects VS2010\belote\Belote\obj\x86\Debug\Views\Windows\MainWindow.baml

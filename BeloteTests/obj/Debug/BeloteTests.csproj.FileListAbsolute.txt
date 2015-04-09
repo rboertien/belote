@@ -3,3 +3,8 @@ E:\Git Sources\Projects\WpfPracs\BeloteTests\bin\Debug\BeloteTests.pdb
 E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\ResolveAssemblyReference.cache
 E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\BeloteTests.dll
 E:\Git Sources\Projects\WpfPracs\BeloteTests\obj\Debug\BeloteTests.pdb
+D:\Git Sources\Projects VS2010\belote\BeloteTests\bin\Debug\BeloteTests.dll
+D:\Git Sources\Projects VS2010\belote\BeloteTests\bin\Debug\BeloteTests.pdb
+D:\Git Sources\Projects VS2010\belote\BeloteTests\obj\Debug\BeloteTests.csprojResolveAssemblyReference.cache
+D:\Git Sources\Projects VS2010\belote\BeloteTests\obj\Debug\BeloteTests.dll
+D:\Git Sources\Projects VS2010\belote\BeloteTests\obj\Debug\BeloteTests.pdb

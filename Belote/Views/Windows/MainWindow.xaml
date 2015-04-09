@@ -1,0 +1,86 @@
+﻿<Window x:Class="Belote.Views.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:models="clr-namespace:Belote.Models"
+        xmlns:viewmodels="clr-namespace:Belote.ViewModels"
+        Title="Belote (klaverjassen)"
+        Height="600"
+        Width="800"
+        MinHeight="500"
+        MinWidth="700">
+    <Window.Resources>
+        <DataTemplate x:Key="playerTemplate"
+                      DataType="Card">
+            <VirtualizingStackPanel Orientation="Vertical">
+                <Label Content="{Binding CardValue}" />
+                <Label Content="{Binding CardColor}" />
+            </VirtualizingStackPanel>
+        </DataTemplate>
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top"
+                    Background="Brown"
+                    Height="40">
+            <TextBlock Text="Header" />
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Bottom"
+                    Background="Brown"
+                    Height="40">
+            <TextBlock Text="Bottom" />
+        </StackPanel>
+        <StackPanel Background="Green"
+                    Width="200">
+            <TextBlock Text="Reclame" />
+        </StackPanel>
+        <StackPanel DockPanel.Dock="Right"
+                    Background="Brown"
+                    Width="100">
+            <TextBlock Text="Score" />
+        </StackPanel>
+        <Grid Background="GreenYellow">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Row="0"
+                        Grid.Column="1">
+                <ListView ItemsSource="{Binding Cards}"
+                          ItemTemplate="{StaticResource playerTemplate}">
+                    <ListView.DataContext>
+                        <models:Hand />
+                    </ListView.DataContext>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"></StackPanel>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+                <StackPanel>
+                    <StackPanel.DataContext>
+                        <models:Player />
+                    </StackPanel.DataContext>
+                    <TextBox Text="{Binding Name}" />
+                </StackPanel>
+            </StackPanel>
+
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="2"
+                       Text="Computer 2 (Oost)" />
+            <TextBlock Grid.Row="2"
+                       Grid.Column="1"
+                       Text="Player (Zuid)" />
+            <TextBlock Grid.Row="1"
+                       Text="Computer 3 (West)" />
+            <TextBlock Grid.Row="1"
+                       Grid.Column="1"
+                       Text="Table (Midden)" />
+        </Grid>
+    </DockPanel>
+</Window>

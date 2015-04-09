@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Belote.Models;
+using Belote.ViewModels;
 
 namespace Belote
 {
@@ -38,10 +39,10 @@ namespace Belote
 
         private void InitializePlayers()
         {
-            _players.Add(new Player("Marleen"));
-            _players.Add(new Player("Gerwin"));
-            _players.Add(new Player("Geeske"));
-            _players.Add(new Player("Fokko"));
+            _players.Add(new Player { Name = "Marleen", Hand = new Hand() });
+            _players.Add(new Player { Name = "Gerwin", Hand = new Hand() });
+            _players.Add(new Player { Name = "Geeske", Hand = new Hand() });
+            _players.Add(new Player { Name = "Fokko", Hand = new Hand() });
         }
     }
 }
