@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Game.cs" />
+    <Compile Include="Helpers\ActionCommand.cs" />
     <Compile Include="Models\Card.cs" />
     <Compile Include="Models\Hand.cs" />
     <Compile Include="Models\Player.cs" />

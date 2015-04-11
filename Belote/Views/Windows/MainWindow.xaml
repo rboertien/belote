@@ -20,8 +20,23 @@
     <DockPanel>
         <StackPanel DockPanel.Dock="Top"
                     Background="Brown"
-                    Height="40">
+                    Height="50">
+            <StackPanel.DataContext>
+                <viewmodels:PlayerViewModel />
+            </StackPanel.DataContext>
             <TextBlock Text="Header" />
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Label Content="Name:" />
+                <TextBox Text="{Binding SelectedPlayer.Name, 
+                                    ValidatesOnDataErrors=True, 
+                                    UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                         Margin="5,0"
+                         Width="100" />
+                <Button x:Name="ButtonAddPlayer"
+                        Command="{Binding AddCommand}"
+                        Content="Add player" />
+            </StackPanel>
         </StackPanel>
         <StackPanel DockPanel.Dock="Bottom"
                     Background="Brown"
@@ -50,6 +65,10 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Row="0"
                         Grid.Column="1">
+                <StackPanel.DataContext>
+                    <viewmodels:PlayerViewModel />
+                </StackPanel.DataContext>
+                <Label Content="{Binding SelectedPlayer}" />
                 <ListView ItemsSource="{Binding Cards}"
                           ItemTemplate="{StaticResource playerTemplate}">
                     <ListView.DataContext>
@@ -57,19 +76,11 @@
                     </ListView.DataContext>
                     <ListView.ItemsPanel>
                         <ItemsPanelTemplate>
-                            <StackPanel Orientation="Horizontal"></StackPanel>
+                            <StackPanel Orientation="Horizontal" />
                         </ItemsPanelTemplate>
                     </ListView.ItemsPanel>
                 </ListView>
-                <StackPanel>
-                    <StackPanel.DataContext>
-                        <models:Player />
-                    </StackPanel.DataContext>
-                    <TextBox Text="{Binding Name}" />
-                </StackPanel>
             </StackPanel>
-
-
             <TextBlock Grid.Row="1"
                        Grid.Column="2"
                        Text="Computer 2 (Oost)" />

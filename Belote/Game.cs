@@ -9,16 +9,13 @@ namespace Belote
 {
     class Game
     {
-        private List<Player> _players;
 
         public Game()
         {
-            _players = new List<Player>();
         }
 
         internal void Start()
         {
-            InitializePlayers();
         }
 
 
@@ -37,12 +34,5 @@ namespace Belote
             // TODO
         }
 
-        private void InitializePlayers()
-        {
-            _players.Add(new Player { Name = "Marleen", Hand = new Hand() });
-            _players.Add(new Player { Name = "Gerwin", Hand = new Hand() });
-            _players.Add(new Player { Name = "Geeske", Hand = new Hand() });
-            _players.Add(new Player { Name = "Fokko", Hand = new Hand() });
-        }
     }
 }

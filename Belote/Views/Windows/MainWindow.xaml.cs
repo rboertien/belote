@@ -23,8 +23,8 @@ namespace Belote.Views.Windows
         {
             InitializeComponent();
 
-            Game game = new Game();
-            game.Start();
+            //Game game = new Game();
+            //game.Start();
         }
     }
 }
