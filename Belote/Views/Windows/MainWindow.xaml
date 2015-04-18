@@ -28,9 +28,7 @@
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
                 <Label Content="Name:" />
-                <TextBox Text="{Binding SelectedPlayer.Name, 
-                                    ValidatesOnDataErrors=True, 
-                                    UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                <TextBox Text="Name"
                          Margin="5,0"
                          Width="100" />
                 <Button x:Name="ButtonAddPlayer"
@@ -65,22 +63,28 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Row="0"
                         Grid.Column="1">
-                <StackPanel.DataContext>
-                    <viewmodels:PlayerViewModel />
-                </StackPanel.DataContext>
-                <Label Content="{Binding SelectedPlayer}" />
-                <ListView ItemsSource="{Binding Cards}"
-                          ItemTemplate="{StaticResource playerTemplate}">
-                    <ListView.DataContext>
-                        <models:Hand />
-                    </ListView.DataContext>
-                    <ListView.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <StackPanel Orientation="Horizontal" />
-                        </ItemsPanelTemplate>
-                    </ListView.ItemsPanel>
-                </ListView>
+                <StackPanel Background="Purple" Height="20">
+                    <StackPanel.DataContext>
+                        <viewmodels:PlayerViewModel />
+                    </StackPanel.DataContext>
+                    <Label Content="{Binding SelectedPlayer.Name}" />
+                </StackPanel>
+                <StackPanel Background="Yellow">
+                    <StackPanel.DataContext>
+                        <viewmodels:HandViewModel />
+                    </StackPanel.DataContext>
+                    <ListView ItemsSource="{Binding Cards}"
+                          ItemTemplate="{StaticResource playerTemplate}" Height="69">
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <StackPanel Orientation="Horizontal" />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </StackPanel>
             </StackPanel>
+
+
             <TextBlock Grid.Row="1"
                        Grid.Column="2"
                        Text="Computer 2 (Oost)" />

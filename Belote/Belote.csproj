@@ -66,7 +66,7 @@
     <Compile Include="Game.cs" />
     <Compile Include="Helpers\ActionCommand.cs" />
     <Compile Include="Models\Card.cs" />
-    <Compile Include="Models\Hand.cs" />
+    <Compile Include="ViewModels\HandViewModel.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="Helpers\Observables\ObservableObject.cs" />
     <Compile Include="ViewModels\PlayerViewModel.cs" />

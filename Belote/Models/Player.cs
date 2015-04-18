@@ -3,26 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Belote.ViewModels;
 
 namespace Belote.Models
 {
-    class Player : ObservableObject
+    class Player
     {
-        public Hand Hand { get; set; }
+        public HandViewModel Hand { get; set; }
+        public string Name { get; set; }
 
-        private string _name;
-
-        public string Name
-        {
-            get { return _name; }
-            set
-            {
-                if (_name != value)
-                {
-                    _name = value;
-                    OnPropertyChanged("Name");
-                }
-            }
-        }
     }
 }

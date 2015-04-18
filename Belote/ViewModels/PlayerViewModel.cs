@@ -20,6 +20,8 @@ namespace Belote.ViewModels
         public PlayerViewModel()
         {
             Players = new ObservableCollection<Player>();
+
+            SelectedPlayer = new Player { Name = "Gerwin", Hand = new HandViewModel() };
         }
 
         public ICommand AddCommand
@@ -32,7 +34,7 @@ namespace Belote.ViewModels
 
         private void AddPlayer()
         {
-            Players.Add(new Player { Name = "Marleen", Hand = new Hand() });
+            Players.Add(new Player { Name = "Marleen", Hand = new HandViewModel() });
 
             var index = Players.Count -1;
 

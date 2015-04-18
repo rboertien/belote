@@ -2,31 +2,26 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Belote.Observables;
 using System.Collections.ObjectModel;
+using Belote.Models;
 
-namespace Belote.Models
+namespace Belote.ViewModels
 {
-    class Hand
+    class HandViewModel
     {
-        private ObservableCollection<Card> _cards = new ObservableCollection<Card>();
         private static readonly Random _getRandom = new Random();
+        private List<Card> _cards;
+        public ObservableCollection<Card> Cards { get; set; }
 
-        public Hand()
+        public HandViewModel()
         {
+            InitializeCards();
+
             Cards = RandomPlayingCards();
-        }
-
-        public ObservableCollection<Card> Cards
-        {
-            get { return _cards; }
-            set { _cards = value; }
         }
 
         private ObservableCollection<Card> RandomPlayingCards()
         {
-            InitializeCards();
-
             var playingCards = new ObservableCollection<Card>();
 
             //This will give you 8 unique random values from the 0 to 32 range
@@ -45,6 +40,7 @@ namespace Belote.Models
         /// </summary>
         private void InitializeCards()
         {
+            _cards = new List<Card>();
             _cards.Add(new Card { CardColor = "clubs", CardValue = "seven" });
             _cards.Add(new Card { CardColor = "clubs", CardValue = "eight" });
             _cards.Add(new Card { CardColor = "clubs", CardValue = "nine" });
@@ -72,14 +68,14 @@ namespace Belote.Models
             _cards.Add(new Card { CardColor = "diamonds", CardValue = "king" });
             _cards.Add(new Card { CardColor = "diamonds", CardValue = "ace" });
 
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "seven" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "eight" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "nine" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "ten" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "farmer" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "queen" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "king" });
-            _cards.Add(new Card { CardColor = "diamonds", CardValue = "ace" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "seven" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "eight" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "nine" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "ten" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "farmer" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "queen" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "king" });
+            _cards.Add(new Card { CardColor = "hearts", CardValue = "ace" });
         }
     }
 }
